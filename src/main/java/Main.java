@@ -7,8 +7,7 @@ class Main {
 
     // modify this method
     public static long multiplySquaresOfNumbers(List<Integer> numbers) {
-        // your code here
-        return 0;
+        return numbers.stream().map(x -> x * x).reduce(1,(a,b)->a*b);
     }
 
     public static void main(String[] args) {
